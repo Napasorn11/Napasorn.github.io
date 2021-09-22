@@ -1,0 +1,134 @@
+
+body{
+  padding: 0;
+  margin: 0;
+}
+/********************Gallary*************** */
+
+.gallary{
+    background-color:#152D35;
+    padding: 35px;
+    width: 100%;
+  }
+  .gallary .head{
+    font-size: 3rem;
+    color: lightcoral;
+    text-align: center;
+    margin-top: 30px;
+    font-style: oblique;
+  }
+  .gallary .box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  
+  .gallary .text{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #848c99;
+    margin-left: 10px;
+  }
+  .img{
+    margin-left: 30px;
+  }
+  
+  .img img{
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 4px rgb(233, 225, 225);
+    grid-template-columns: 1fr;
+    }
+
+    img.HH{
+        margin: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 3%;
+        box-shadow: 0px 0px 4px rgb(233, 225, 225);
+        grid-template-columns: 1fr;
+    }
+
+  
+  /* ***************ปรับขนาด******************** */
+
+ @media screen and (max-width: 769px){
+    .gallary .box{
+      flex-direction: column;
+      display: flex;
+    }
+    .gallary .text{
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .img img{
+      margin-left: 160px;
+    }
+  }
+@media screen and (max-width: 580px){
+  .img img{
+    margin-left: 65px;
+  }
+}
+@media screen and (max-width: 480px){
+  .img img{
+    width: 250px;
+    height: 125px;
+    margin-left: 36px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .img img{
+    width: 200px;
+    height: 100px;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 376px){
+    .img img{
+      width: 200px;
+      height: 100px;
+      margin-left: 15px;
+    }
+  }
+
+  @media screen and (max-width: 321px){
+    .img img{
+      width: 200px;
+      height: 100px;
+      margin-left: -10px;
+    }
+  }
+
+ 
+.back .A{
+  color: white;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.scroll-top {
+  height: 40px;
+  width: 40px;
+  background-color: #2a7da2;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-top:hover {
+  transform: scale(1);
+}

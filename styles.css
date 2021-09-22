@@ -1,0 +1,361 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/**************** TAB BAR*************** */
+.topnav {
+  background-color: #152D35;
+  overflow: hidden;
+  /* margin: 20px; */
+}
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  background-color:#e1ebe5;
+  color: black;
+}
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+  background-color: #D4ECDD;
+  color: black;
+}
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+  display: none;
+}
+/*************************** END*************************** */
+
+
+/***************** TOP********************* */
+.Top-selection{
+background-color:#152D35;
+padding: 20px;
+width: 100%;
+box-shadow: 0 35px 35px rgba(0, 0.0, 0, 0.1);
+}
+
+img.logo{
+margin-top: 50px;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 0px 4px rgba(0, 0.2, 0, 0.7);
+}
+
+h1.name{
+text-transform: uppercase;
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 35px;
+margin-top: 20px;
+color: white;
+text-align: center;
+}
+/**************** END**************** */
+
+/************** Social*************** */
+.social{
+margin: 0;
+text-align: center;
+width: 100%;
+margin-bottom: 25px;
+font-size: 18px;
+}
+.social ul li{
+position: relative;
+display: inline-flex;
+width: 60px;
+height: 60px;
+background: #EEEEEE;
+border-radius: 50%;
+cursor: pointer;
+transition: background 150ms ease-in-out;
+}
+.social ul li:hover{
+background: #ccc; 
+}
+.social ul li a{
+position: absolute;
+font-size: 30px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+/************** END*************** */
+
+
+/************column Divide********* */
+.container{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+
+.container .col-div-4{
+position: relative;
+float: left;
+background: #D4ECDD;
+
+}
+.container .col-div-8{
+position: relative;
+float: left;
+margin-left: 20px;
+}
+
+.content-box{
+padding: 10px;
+margin-top: 40px;
+}
+/************** END*************** */
+
+
+/********** Lift side **************/
+.content-box{
+margin-left: 30px;
+}
+
+.head{
+font-size: 1.5rem;
+font-weight: bold;
+
+}
+
+.contact .fa{
+color: #0f526b;
+}
+
+.interest .text{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.interest .text .fa{
+color: #0f526b;
+}
+
+.percent{
+position: relative;
+width: 80%;
+height: 6px;
+background: #848c99;
+display: block;
+margin: 5px;
+}
+.percent div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+}
+.languages ul{
+position: relative;
+margin-left: 0%;
+}
+.languages ul li{
+position: relative;
+list-style: none;
+cursor: pointer;
+}
+
+.ref .fa{
+color: #0f526b;
+}
+/************** END*************** */
+
+
+/********** Right side **************/
+.EDUCATION .box{
+display: flex;
+flex-direction: row;
+margin: 20px 0;
+}
+.EDUCATION .box .year_education{
+min-width: 150px;
+
+}
+.EDUCATION .box .year_education h5{
+
+color: #848c90;
+font-weight: 600;
+font-style: oblique;
+font-size: 14px;
+margin-top: 4px;
+}
+.EDUCATION .box .text h4{
+font-size: 18px;
+color: #2a7da2;
+text-transform: uppercase;
+}
+
+
+.EXPERIENCE .box{
+display: flex;
+flex-direction: row;
+margin: 20px 0;
+}
+.EXPERIENCE .box .year_company{
+min-width: 150px;
+
+}
+.EXPERIENCE .box .year_company h5{
+
+color: #848c90;
+font-weight: 600;
+font-style: oblique;
+font-size: 14px;
+margin-top: 4px;
+}
+.EXPERIENCE .box .text h4{
+font-size: 18px;
+color: #2a7da2;
+text-transform: uppercase;
+}
+
+
+.PROJECT .box{
+display: flex;
+flex-direction: row;
+margin: 10px 0;
+}
+.PROJECT .box .year_project{
+min-width: 150px;
+}
+.PROJECT .box .year_project h5{
+color: #848c90;
+font-weight: 600;
+font-style: oblique;
+font-size: 14px;
+margin-top: 4px;
+}
+.PROJECT .box .text h4{
+font-size: 18px;
+color: #2a7da2;
+text-transform: uppercase;
+}
+
+
+.SKILL .box{
+position: relative;
+width:100%;
+display: grid;
+grid-template-columns: 200px 1fr;
+justify-content: center;
+align-items: center;
+
+}
+.SKILL .box h4{
+text-transform: uppercase;
+color: #848c99;
+font-weight: 500; 
+font-size: 14px;
+margin: 15px;
+}
+.percent1{
+position: relative;
+width: 80%;
+height: 10px;
+background:#f0f0f0 ;
+}
+
+.percent1 div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+}
+/**************** END**************** */
+
+
+/* เมื่อหน้าจอกว้างน้อยกว่า 600 พิกเซลจะทำการซ่อนแถบเมนู*/
+@media screen and (max-width: 770px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+  
+/* เมื่อคลิกที่ไอคอนสามขีดจะทำการแสดงเมนูในแนวตั้ง*/
+  .topnav.responsive {
+      position: relative;
+  }
+  .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+  h1.name{
+    font-size: 1.65rem;
+  }
+
+}
+/************************* END**************** */
+
+@media screen and (max-width: 600px){
+  .EDUCATION .box{
+    flex-direction: column;
+  }
+
+  .EDUCATION .box .year_education{
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .EXPERIENCE .box{
+    flex-direction: column;
+  }
+
+  .EXPERIENCE .box .year_company{
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+  .SKILL .box{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media screen and (max-width: 458px){
+  .PROJECT .box{
+    flex-direction: column;
+    }
+    .PROJECT .box .year_project{
+    min-width: 150px;
+    margin-bottom: 5px;
+    }
+    h1.name{
+      font-size: 1.3rem;
+    }
+}

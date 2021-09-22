@@ -48,17 +48,18 @@ background-color:#152D35;
 padding: 20px;
 width: 100%;
 box-shadow: 0 35px 35px rgba(0, 0.0, 0, 0.1);
+height: 720px;
 }
 
 img.logo{
-margin-top: 50px;
-width: 180px;
-height: 180px;
+margin-top: 125px;
+width: 200px;
+height: 200px;
 border-radius: 50%;
 display: block;
 margin-left: auto;
 margin-right: auto;
-box-shadow: 0px 0px 4px rgba(0, 0.2, 0, 0.7);
+box-shadow: 0px 0px 20px #888;
 }
 
 h1.name{
@@ -108,7 +109,9 @@ transform: translate(-50%, -50%);
 position: relative;
 width: 100%;
 display: grid;
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 1fr 
+
+2fr;
 }
 
 .container .col-div-4{
@@ -132,7 +135,7 @@ margin-top: 40px;
 
 /********** Lift side **************/
 .content-box{
-margin-left: 11px;
+margin-left: 10px;
 }
 
 .head{
@@ -289,6 +292,50 @@ background: #03a9f4;
 /**************** END**************** */
 
 
+
+/********************Gallary*************** */
+
+.gallary{
+  background-color:#152D35;
+  padding: 35px;
+  width: 100%;
+}
+.gallary .head{
+  font-size: 3rem;
+  color: #EEEEEE;
+  text-align: center;
+  margin-top: 30px;
+}
+.gallary .box{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.gallary .text{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #848c99;
+  margin-left: 10px;
+}
+.img{
+  margin-left: 30px;
+}
+
+.img img{
+  margin: 30px;
+  width: 300px;
+  height: 200px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 4px rgb(233, 225, 225);
+  grid-template-columns: 1fr;
+  }
+
+/************************* END**************** */
+
+
 /* เมื่อหน้าจอกว้างน้อยกว่า 600 พิกเซลจะทำการซ่อนแถบเมนู*/
 @media screen and (max-width: 770px) {
   .topnav a:not(:first-child) {
@@ -324,6 +371,9 @@ background: #03a9f4;
 }
 /************************* END**************** */
 
+
+
+/******************ปรับขนาด**************** */
 @media screen and (max-width: 600px){
   .EDUCATION .box{
     flex-direction: column;
@@ -345,9 +395,20 @@ background: #03a9f4;
   .SKILL .box{
     grid-template-columns: repeat(1,1fr);
   }
+  .gallary .box {
+    flex-direction: column;
+  }
+  .gallary .text{
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .img img{
+    margin-left: 65px;
+  }
 }
 
-@media screen and (max-width: 461px){
+@media screen and (max-width: 480px){
   .PROJECT .box{
     flex-direction: column;
     }
@@ -358,4 +419,19 @@ background: #03a9f4;
     h1.name{
       font-size: 1.3rem;
     }
+    .img img{
+      width: 250px;
+      height: 125px;
+      margin-left: 36px;
+    }
+}
+
+/************************* END**************** */
+
+@media screen and (max-width: 390px){
+  .img img{
+    width: 200px;
+    height: 100px;
+    margin-left: 15px;
+  }
 }

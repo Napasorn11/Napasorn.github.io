@@ -347,7 +347,7 @@ background: #03a9f4;
   }
 }
 
-@media screen and (max-width: 458px){
+@media screen and (max-width: 461px){
   .PROJECT .box{
     flex-direction: column;
     }

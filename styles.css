@@ -390,6 +390,10 @@ background: #03a9f4;
     h1.name{
       font-size: 1.3rem;
     }
+    .interest .text{
+      grid-template-columns: repeat(2,1fr);
+    }
+
 }
 
 /************************* END**************** */

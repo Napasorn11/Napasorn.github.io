@@ -16,6 +16,7 @@ body{
     text-align: center;
     margin-top: 30px;
     font-style: oblique;
+    font-weight: bold;
   }
   .gallary .box{
     position: relative;
@@ -27,9 +28,10 @@ body{
   
   .gallary .text{
     font-size: 1.8rem;
-    font-weight: bold;
-    color: #848c99;
+    /* font-weight: bold; */
+    color: white;
     margin-left: 10px;
+    margin-top: 30px;
   }
   .img{
     margin-left: 30px;
@@ -109,8 +111,8 @@ body{
 
  
 .back .A{
-  color: white;
-  font-size: 2rem;
+  color: #848c99;
+  font-size: 1.5rem;
   margin-left: 20px;
 }
 
